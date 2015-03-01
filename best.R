@@ -19,7 +19,7 @@ best <- function(state, outcome) {
     df <- data[, c(2,7,11,17,23)]
     colnames(df) <- c("hospital name","state","heart attack","heart failure","pneumonia")
     df_state <- subset(df,df$state==state)
-    df[which.min(df[,outcome]),1]   
+    df_state[which.min(df_state[,outcome]),1]   
 
 }
 
