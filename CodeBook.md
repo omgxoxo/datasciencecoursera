@@ -1,6 +1,6 @@
 DATA DICTIONARY
 
-activities :   activity label including 6 types of activities as follows:
+activities : number of observations - activity label including 6 types of activities as follows:
 1 WALKING
 2 WALKING_UPSTAIRS
 3 WALKING_DOWNSTAIRS
@@ -14,7 +14,7 @@ tGravityAcc-XYZ 			fBodyAccJerk-XYZ
 tBodyAccJerk-XYZ			fBodyGyro-XYZ
 tBodyGyro-XYZ				fBodyAccMag
 tBodyGyroJerk-XYZ			fBodyAccJerkMag
-tBodyAccMag				fBodyGyroMag
+tBodyAccMag				    fBodyGyroMag
 tGravityAccMag				fBodyGyroJerkMag
 tBodyAccJerkMag
 tBodyGyroMag

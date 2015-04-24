@@ -15,7 +15,6 @@ Dataset - randomly partitioned into two sets
 1.	70% of the volunteers was selected for generating the training data
 2.	30% the test data 
 Notes: 
-======
 - Features are normalized and bounded within [-1,1].
 - Each feature vector is a row on the text file.
 

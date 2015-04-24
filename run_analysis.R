@@ -1,5 +1,6 @@
 ## "Getting & Cleaning Data" Course Project
 ## Refer to README.md and CodeBook.md for detailed info on project requirement
+## dplyr package required
 
 ## Read datafiles.
     activities <- read.table("./project/activity_labels.txt")  
@@ -23,7 +24,8 @@
     colnames(merge_train_test) <- meas_header
     completeDS <- cbind(merge_subj_act,merge_train_test)
     colnames(completeDS)[1:4] <- c("SubjID","ActivityCd","ActivityCd1","ActivityType")
-   
+ 
+    
 ## Extract only mean and standard deviation measurements.  Apply descriptive names for activities in the dataset.
 ## Label column names with more descriptive variable names.    
     m_sd_subset <- completeDS[,grep(c("mean\\(\\)|std\\(\\)"), colnames(completeDS), ignore.case=TRUE, value=FALSE)]
